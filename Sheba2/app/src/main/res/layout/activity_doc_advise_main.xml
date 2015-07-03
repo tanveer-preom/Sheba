@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.tanveer.doc_advise.DocAdviseMain"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="110dp"
+        android:background="#9C27B0"
+        >
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="3dp"
+            android:id="@+id/pro_pic"
+            android:layout_alignParentLeft="true"
+
+            />
+        <TextView
+            android:id="@+id/pro_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="17sp"
+
+            android:layout_toRightOf="@+id/pro_pic"
+            android:layout_marginTop="15dp"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/post_korun"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/post"
+            android:textColor="#ffffff"
+            android:layout_alignParentBottom="true"
+            android:onClick="onPostClick"
+
+            />
+
+
+    </RelativeLayout>
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/images"
+        ></ListView>
+
+</LinearLayout>
